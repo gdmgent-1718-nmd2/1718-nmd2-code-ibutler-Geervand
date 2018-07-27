@@ -4,13 +4,13 @@
 
 # Site settings
 # ─────────────
-baseurl: /1718-nmd2-code-ibutler # the subpath of your site, e.g. /blog
+baseurl: /1718-nmd2-code-ibutler-geervand # the subpath of your site, e.g. /blog
 # host   : 127.0.0.1
 # port   : 4000
 
 # Custom Site variables
 # ─────────────────────
-show-style-guide: true # Show style guide in footer.
+show-style-guide: false # Show style guide in footer.
 title: Tweede Examenkans
 
 # Build settings
