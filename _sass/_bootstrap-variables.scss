@@ -1,20 +1,81 @@
 // Custom Variables
 //
 // Put variables overrides here.
+
+// Body
+//
+
 //
 // See _vendor/bootstrap/scss/_variables.scss
+
 
 //
 // Color system
 //
 
-$indigo:  #6610f2;
-$primary: $indigo;
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
 
+$primary:      #1FADB7;
+$primarylight:   lighten($primary, 20%);
+$primarydark:    darken($primary, 20%);
+
+$cta:    #F03D21;
+$ctalight:   lighten($cta, 20%);
+
+
+
+
+$secondary:     $gray-700;
+
+
+// Settings for the `<body>` element.
+
+//$body-bg:                   $primary;
+$body-color:                $secondary;
+
+//FORMS
+
+$input-border-color:                    $primary;
+$input-border-width:                    0.20rem;
+$input-border-radius:                   0px;
+
+$input-focus-border-color:              $primarylight;
+$input-focus-box-shadow:                0px;
+
+$input-placeholder-color:               $gray-500;
+$input-plaintext-color:                 $body-color;
+$label-margin-bottom:                   .15rem;
+//BUTTONS
+
+$btn-font-weight:             900;
+$btn-border-radius:           0px;
+$input-btn-focus-color:       none;
+
+//CARDS
+
+$card-border-width:                 0.20rem;
+$card-border-radius:                0px;
+$card-border-color:                 $primary;
+$card-inner-border-radius:          0px;
 // Fonts
 //
 // Font, line-height, and color for body text, headings, and more.
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Lato');
 
 $font-family-base: 'Quicksand', sans-serif;
+$headings-font-weight:        600;
+$headings-font-family: 'Montserrat Alternates', sans-serif;
+$headings-color:              $primarydark;

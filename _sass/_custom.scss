@@ -1,0 +1,83 @@
+//NAV
+
+nav {
+background-color: $primary;
+}
+
+//CTA BUTTON
+
+//transitie definieer je op de 'gewone' knop
+.btn-cta {
+    background-color: $cta;
+    color: $white;
+    transition-property: all; //voor welke properties
+    transition-duration: 1s; // hoelang
+    transition-timing-function: ease-in-out; //grafiekje snelheid 
+}
+
+
+//Voor een transitie zet je hier het eindresultaat
+.btn-cta:hover {
+    background-color: $primarydark;
+    color: $white;
+}
+
+.btn-cta:visited {
+    background-color: $cta;
+    color: $white;
+}
+
+.btn-normaal:active {
+    background-color: $primarydark;
+    color: $white;
+}
+
+
+
+// STANDAARD BUTTON
+.btn-normaal {
+    background-color: $primary;
+    color: $white;
+    border-width: 0.20rem;
+    border-color: $primary;
+    transition-property: all; //voor welke properties
+    transition-duration: 800ms; // hoelang
+    transition-timing-function: ease-in-out; //grafiekje snelheid 
+
+
+}
+
+.btn-normaal:hover {
+    background-color: $white;
+    color: $primary;
+    border-width: 0.20rem;
+    border-color: $primary;
+}
+
+.btn-normaal:active {
+    background-color: $white;
+    color: $primary;
+    border-width: 0.20rem;
+    border-color: $primary;
+
+}
+
+.btn-normaal:visited{
+    background-color: $primary;
+    color: $white;
+    border-width: 0.20rem;
+    border-color: $white;
+}
+
+//FORMS
+
+label {
+    margin-top: 0.30rem;
+}
+
+.contactinfo {
+    font-weight: 600;
+}
+
+//CARD ABOUT ME
+
