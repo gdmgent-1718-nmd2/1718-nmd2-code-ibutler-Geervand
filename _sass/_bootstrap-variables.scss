@@ -3,7 +3,8 @@
 // Put variables overrides here.
 
 // Body
-//
+//NAV
+
 
 //
 // See _vendor/bootstrap/scss/_variables.scss
@@ -25,18 +26,14 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
 
-$primary:      #1FADB7;
+$primary:      #A8C91E;
 $primarylight:   lighten($primary, 20%);
 $primarydark:    darken($primary, 20%);
 
 $cta:    #F03D21;
 $ctalight:   lighten($cta, 20%);
 
-
-
-
 $secondary:     $gray-700;
-
 
 // Settings for the `<body>` element.
 
@@ -79,3 +76,4 @@ $font-family-base: 'Quicksand', sans-serif;
 $headings-font-weight:        600;
 $headings-font-family: 'Montserrat Alternates', sans-serif;
 $headings-color:              $primarydark;
+$link-color:                $white;

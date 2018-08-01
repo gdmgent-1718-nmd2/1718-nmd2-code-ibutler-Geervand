@@ -1,7 +1,24 @@
-//NAV
+//LINKS
 
-nav {
-background-color: $primary;
+
+/*a {
+    color: $white;
+    text-decoration: none;
+
+    &:hover{
+        color: $cta;
+        text-decoration: none;
+    }
+
+    &:active{
+        color: $primarydark;
+        text-decoration: none;
+    }
+}*/
+//TITELS
+
+.title {
+    padding: 1rem 0;
 }
 
 //CTA BUTTON
@@ -13,25 +30,34 @@ background-color: $primary;
     transition-property: all; //voor welke properties
     transition-duration: 1s; // hoelang
     transition-timing-function: ease-in-out; //grafiekje snelheid 
-}
+
 
 
 //Voor een transitie zet je hier het eindresultaat
-.btn-cta:hover {
-    background-color: $primarydark;
-    color: $white;
-}
+//omdat anders mijn a geen transitie had, staat hij hier nog eens
+    &:hover {
+        background-color: $primarydark;
+        color: $white;
+        transition-property: all; //voor welke properties
+        transition-duration: 1s; // hoelang
+        transition-timing-function: ease-in-out; //grafiekje snelheid 
+    
+        a{
+            text-decoration: none;
+            color: $white;
+        }
+    }
 
-.btn-cta:visited {
-    background-color: $cta;
-    color: $white;
-}
+    &:visited {
+        background-color: $cta;
+        color: $white;
+    }
 
-.btn-normaal:active {
-    background-color: $primarydark;
-    color: $white;
+    &:active {
+        background-color: $primarydark;
+        color: $white;
+    }
 }
-
 
 
 // STANDAARD BUTTON
@@ -44,30 +70,41 @@ background-color: $primary;
     transition-duration: 800ms; // hoelang
     transition-timing-function: ease-in-out; //grafiekje snelheid 
 
+        &:hover {
+            background-color: $white;
+            color: $primary;
+            border-width: 0.20rem;
+            border-color: $primary;
+            text-decoration: none;
+            transition-property: all; //voor welke properties
+            transition-duration: 1s; // hoelang
+            transition-timing-function: ease-in-out; //grafiekje snelheid 
 
+            a{
+                text-decoration: none;
+                color: $primary;
+            }
+        }
+
+        &:active {
+            background-color: $white;
+            color: $primary;
+            border-width: 0.20rem;
+            border-color: $primary;
+            text-decoration: none;
+
+        }
+
+        &:visited{
+            background-color: $primary;
+            color: $white;
+            border-width: 0.20rem;
+            border-color: $white;
+            text-decoration: none;
+        }
 }
 
-.btn-normaal:hover {
-    background-color: $white;
-    color: $primary;
-    border-width: 0.20rem;
-    border-color: $primary;
-}
-
-.btn-normaal:active {
-    background-color: $white;
-    color: $primary;
-    border-width: 0.20rem;
-    border-color: $primary;
-
-}
-
-.btn-normaal:visited{
-    background-color: $primary;
-    color: $white;
-    border-width: 0.20rem;
-    border-color: $white;
-}
+//anders is kleur niet $primary wanneer je op de button staat maar niet op de link.
 
 //FORMS
 
@@ -75,9 +112,60 @@ label {
     margin-top: 0.30rem;
 }
 
+//PARAGRAAF TEKST CONTACT INFO IN FOOTER EN OP CONTACTPAGE
+
 .contactinfo {
     font-weight: 600;
 }
 
-//CARD ABOUT ME
+//FOOTER
 
+.footer {
+    background-color: $primary;
+    color: $white;
+
+
+    h4 {
+        color: $white;
+    }
+
+    ul {
+        list-style-type: none;
+    
+        a{
+            color: $white;
+            font-weight: 600;
+
+            &:hover {
+                color: $cta;
+                text-decoration: none;
+            }
+        }
+    input {
+        margin: 0.2rem;
+    }
+
+    }
+}
+
+//BEVESTIGING PAGES
+/*
+VRAAG VOOR OP FEEDBACK: WAAROM WERKT DIT NIET? 
+Werkt ook niet met classes in html : d-flex, justify-content-center en align-items-center.
+
+.bevestiging {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+*/
+
+.bevestiging{
+    margin-top: 100px;
+}
+
+//PRIJS
+
+.prijs{
+    font-weight: 700;
+}
