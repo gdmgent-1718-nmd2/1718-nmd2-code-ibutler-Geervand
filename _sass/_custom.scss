@@ -17,6 +17,10 @@
 }*/
 //TITELS
 
+body{
+    overflow-x: hidden;
+}
+
 .title {
     padding: 1rem 0;
 }
@@ -168,4 +172,19 @@ Werkt ook niet met classes in html : d-flex, justify-content-center en align-ite
 
 .prijs{
     font-weight: 700;
+}
+
+
+.parallax { 
+    /* The image used */
+    background-image: url("../../img/test1.jpg");
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
