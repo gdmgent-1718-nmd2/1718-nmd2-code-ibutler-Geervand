@@ -1,0 +1,213 @@
+---
+layout   : default
+permalink: afspraak
+# Custom Page Variables
+# ─────────────────────
+---
+
+<div class="container-fluid p-lg-3">
+    <div class="row">
+        <div class= "col offset-md-2 col-md-6 offset-right-md-4 mt-4">
+            <h2 class="title">Afspraak maken</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <!--   SUBTOTAAL-->
+        <div class="col col-md-3 offset-right-md-2 order-md-2"> 
+                <div class="card w-100 subtotaal" style="width: 18rem">
+                    <div class="card-body">
+                            <h3 class="card-title">Subtotaal: €100,-</h3>
+                            <p>dagen (2x) €40,- <br>
+                                warme maaltijd (1x) €20,-
+                            </p>
+                    </div>
+                </div>
+            </div>
+
+            
+    
+
+        <div class="offset-md-2 col-md-5 order-md-1">
+            <!-- COLLAPSE -->
+            <!--PLAN UW AFSPRAAK-->
+            <div class="accordion" id="accordionExample">
+                <div class="card mb-3">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-collapse" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Plan uw afspraak.
+                            </button>
+                        </h5>
+                    </div>
+                
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <form>
+                                <label for="inputnaam">Kies uw data</label>
+                                <input type="text" class="form-control" id="inputnaam" placeholder="bv. 10/08, 11/08, 15/08, ...">
+                                <!-- persoonlijk zou ik hier eerder voor een datapicker gaan, maar dat zou voor een developper zijn om te coderen.-->
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+
+<!-- SELECTEER UW OPTIES-->
+                <div class="card mb-3">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-collapse collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Selecteer uw opties.
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <form>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1" name="opvraaguurtje">
+                                    <label class="custom-control-label" for="customCheck1">Opvraaguurtje</label>
+                                
+                                     <div class="revealifactive">
+                                    <input type="text" class="form-control" id="inlineFormInputName" placeholder="Op welke dagen? bv: 22/8, 23/8, 26/8, ...">
+                                    </div>
+                                </div>
+
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck2" name="Warme maaltijd">
+                                    <label class="custom-control-label" for="customCheck2">Warme maaltijd</label>
+                                
+                                     <div class="revealifactive">
+                                    <input type="text" class="form-control" id="inlineFormInputName" placeholder="Op welke dagen? bv: 22/8, 23/8, 26/8, ...">
+                                    </div>
+                                </div>
+
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck3" name="maaltijd premium">
+                                    <label class="custom-control-label" for="customCheck3">Maaltijd premium</label>
+                                
+                                        <div class="revealifactive">
+                                    <input type="text" class="form-control" id="inlineFormInputName" placeholder="Op welke dagen? bv: 22/8, 23/8, 26/8, ...">
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- CONTACTGEGEVENS-->
+                
+                <div class="card mb-3">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-collapse collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Contactgegevens
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="inputnaam">Voor- en achternaam</label>
+                                        <input type="text" class="form-control" id="inputnaam" placeholder="bv. Geertje van der Linden">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputmail">E-mailadres</label>
+                                        <input type="text" class="form-control" id="inputmail" placeholder="bv. vanderlinden.gh@gmail.com">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="inputnummer">GSM-nummer</label>
+                                        <input type="text" class="form-control" id="inputnummer" placeholder="bv. +32484363955">
+                                    </div>
+    
+
+                                    <div class="form-group">
+                                        <label for="inputstraat">Straat + huisnummer</label>
+                                        <input type="text" class="form-control" id="inputstraat" placeholder="bv. industrieweg 232">
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-md-8">
+                                        <label for="inputstad">Stad</label>
+                                        <input type="text" class="form-control" id="inputstad">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                        <label for="inputpst">Postcode</label>
+                                        <input type="text" class="form-control" id="inputpost" placeholder="bv. 9000">
+                                        </div>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-normaal">Opslaan</button>
+                                </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!--SAMENVATTING-->
+
+                <div class="card mb-3">
+                    <div class="card-header" id="headingFour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-collapse collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Samenvatting
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p>Is deze informatie juist?</p>
+                            <p class="prijs"> 10/08 - 11/08, 15/08</p>
+                            <p class="prijs"> Opvraaguurtje 15/08, warme maaltijd 10/08</p>
+                            <p class="prijs">Geertje van der Linden <br>
+                            vanderlinden.gh@gmail.com<br>
+                            0484363955<br>
+                            Industrieweg 232 9000 Gent
+                        </p>    
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-header" id="headingFive">
+                        <h5 class="mb-0">
+                            <button class="btn btn-collapse collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Betalen
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionbetalen">
+                        <div class="card-body">
+                                <form>
+                                        <div class="custom-control custom-radio">
+                                          <input type="radio" class="custom-control-input" id="customRadio" name="betalen" value="customEx">
+                                          <label class="custom-control-label" for="customRadio">Bankcontact/MisterCash</label>
+                                          <div class="revealifactive">
+                                                <p>U wordt doorverwezen naar de website van uw bank nadat u op verzenden hebt geklikt.</p>
+                                            </div>
+                                        </div>
+                                        <div class="custom-control custom-radio">
+                                          <input type="radio" class="custom-control-input" id="customRadio2" name="betalen" value="customEx">
+                                          <label class="custom-control-label" for="customRadio2">Contant</label>
+                                          <div class="revealifactive">
+                                                <p>Te betalen bij aanvang.</p>
+                                            </div>
+                                        </div> 
+                                      </form>
+                                      <button type="submit" class="btn btn-normaal"><a href="bevestigingbetaling.html">Verzenden</a></button>
+                        
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        
+        </div>
+
+
+    
+    </div>
+</div>

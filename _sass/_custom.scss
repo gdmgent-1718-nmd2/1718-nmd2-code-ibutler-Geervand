@@ -116,6 +116,38 @@ body, html{
         }
 }
 
+//COLLAPSE
+
+.accordion{
+    .card-header{
+        background-color: $primary;
+    }
+}
+
+//BTN-COLLAPSE
+
+.btn-collapse {
+    background-color: $primary;
+    color: $white;
+}
+
+//REVEALIFACTIVE
+
+input[type="radio"]:checked ~ .revealifactive,
+input[type="checkbox"]:checked ~ .revealifactive {
+  opacity: 1;
+  max-height: 100px; /* little bit of a magic number :( */
+  overflow: visible;
+}
+
+.revealifactive{
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+
+
+
 //KLEINE BUTTON
 .btn-sm{
     border-radius: 0px;
@@ -180,7 +212,7 @@ Werkt ook niet met classes in html : d-flex, justify-content-center en align-ite
     margin-top: 100px;
 }
 
-//PRIJS
+//PRIJS op de prijspagina de €40,- enz
 
 .prijs{
     font-weight: 700;
@@ -201,6 +233,18 @@ Werkt ook niet met classes in html : d-flex, justify-content-center en align-ite
     background-size: cover;
 
 }
+
+//AFSPRAAK
+
+//COLLAPSE
+
+.accordion {
+
+    a{
+        color: $primary;
+    }
+}
+//MOBILE CHANGES
 
 @include media-breakpoint-down(sm) { 
     
