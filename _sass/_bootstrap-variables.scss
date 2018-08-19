@@ -26,11 +26,11 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
 
-$primary:      #A8C91E;
-$primarylight:   lighten($primary, 20%);
+$primary:      #87CEFA;
+$primarylight:   lighten($primary, 10%);
 $primarydark:    darken($primary, 20%);
 
-$cta:    #F03D21;
+$cta:    #3CB371;
 $ctalight:   lighten($cta, 20%);
 
 $secondary:     $gray-700;
@@ -70,17 +70,20 @@ $card-inner-border-radius:          0px;
 $navbar-light-color:                rgba($white, 0.5) !default;
 $navbar-light-hover-color:          rgba($white, .7) !default;
 $navbar-light-active-color:         rgba($white, 1) !default;
+
+//JUMB
+$jumbotron-bg:                      $white;
+
 // Fonts
 //
 // Font, line-height, and color for body text, headings, and more.
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
-@import url('https://fonts.googleapis.com/css?family=Lato');
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
 
 $font-family-base: 'Quicksand', sans-serif;
-$headings-font-weight:        600;
-$headings-font-family: 'Montserrat Alternates', sans-serif;
+$headings-font-family: 'Montserrat', sans-serif;
+$heading-font-weight: 700;
 $headings-color:              $primarydark;
 $font-size-base:              1rem; // Assumes the browser default, typically `16px` - staat erin omdat $lead-font-size ander niet werkt. DEFAULT SETTING!
 $lead-font-size:              ($font-size-base * 1);
