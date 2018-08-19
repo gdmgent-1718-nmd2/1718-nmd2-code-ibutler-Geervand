@@ -20,6 +20,7 @@ body, html{
 }
 
 //NAV
+
 .collapse{
     margin-right: 10rem;
 }
@@ -31,6 +32,11 @@ body, html{
 .nav-link{
     font-weight: 600;
 }
+
+
+.navbar-toggler-icon{
+     color: $white;
+    }
 
 
 
@@ -219,19 +225,13 @@ Werkt ook niet met classes in html : d-flex, justify-content-center en align-ite
 }
 
 
-.parallax { 
+.voorzijde { 
     /* The image used */
-    background-image: url("../../img/test1.jpg");
+    background-color: $primary;
+}
 
-    /* Set a specific height */
-    height: 500px; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+.navbar-toggler{
+    color: $white;
 }
 
 //AFSPRAAK
@@ -241,7 +241,7 @@ Werkt ook niet met classes in html : d-flex, justify-content-center en align-ite
 .accordion {
 
     a{
-        color: $primary;
+        color: $white;
     }
 }
 //MOBILE CHANGES
@@ -253,6 +253,8 @@ Werkt ook niet met classes in html : d-flex, justify-content-center en align-ite
         display: flex;
         justify-content: center;
 }
+
+
 
     .btn-cta, .btn-normaal{
         text-align: center;
