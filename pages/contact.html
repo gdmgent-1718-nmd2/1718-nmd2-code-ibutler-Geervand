@@ -12,30 +12,32 @@ permalink: contact
     </div>
 
     <div class="row">
-        <div class="offset-md-2 col-md-5">
+        <div class="offset-md-2 col-md-5 ">
             <!-- CONTACT FORM -->
-            <form class="contactformulier needs-validation" novalidate>
-                <label for="naam">Naam</label>
-                <input type="text" class="form-control" id="naam" placeholder="Bv. Geertje van der Linden" required>
-                <div class="invalid-feedback">
-                    Vul dit veld in.
-                </div>
-
-                <label for="email">E-mailadres</label>
-                <input type="email" class="form-control" id="email" placeholder="bv. vanderlinden.gh@gmail.com" required>
-                <div class="invalid-feedback">
-                    Dit is geen e-mailadres.
-                </div>
-                
-
-                
+            <form class="needs-validation" novalidate>
                 <div class="form-group">
-                    <label for="bericht">Ik ben zeer benieuwd naar jou vraag of wat jij wilt vertellen.</label>
+                    <label for="inputnaam">Naam</label>
+                    <input type="text" class="form-control" id="inputnaam" placeholder="bv. Geertje van der Linden" required>
+                    <div class="invalid-feedback">
+                        Vul dit veld in.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputmail">E-mailadres</label>
+                    <input type="text" class="form-control" id="inputmail" placeholder="bv. vanderlinden.gh@gmail.com" required>
+                    <div class="invalid-feedback">
+                        Dit is geen e-mailadres.
+                    </div>
+                </div>
+        
+                <div class="form-group">
+                    <label for="bericht">Ik ben zeer benieuwd naar jouw vraag of wat jij wilt vertellen.</label>
                     <textarea class="form-control" id="bericht" rows="10" placeholder="Uw bericht" required></textarea>
                     <div class="invalid-feedback">
                         Vul dit veld in.
                     </div>
                 </div>
+                
                 <button type="submit" class="btn btn-normaal"><a href="bevestigingcontact.html">Verzenden</a></button>
             </form>
 

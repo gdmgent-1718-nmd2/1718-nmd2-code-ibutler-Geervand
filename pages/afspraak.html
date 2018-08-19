@@ -15,28 +15,29 @@ permalink: afspraak
     <div class="row">
         <!--   SUBTOTAAL-->
         <div class="col col-md-3 offset-right-md-2 order-md-2 mb-2"> 
-                <div class="card w-100 subtotaal" style="width: 18rem">
-                    <div class="card-body">
-                            <h3 class="card-title">Subtotaal: €100,-</h3>
-                            <p>dagen (2x) €40,- <br>
-                                warme maaltijd (1x) €20,-
-                            </p>
-                    </div>
+            <div class="card w-100 subtotaal" style="width: 18rem">
+                <div class="card-body">
+                    <h3 class="card-title">Subtotaal: €100,-</h3>
+                    <p>dagen (2x) €40,- <br>
+                    warme maaltijd (1x) €20,-
+                    </p>
                 </div>
             </div>
+        </div>
 
             
     
 
         <div class="col offset-md-2 col-md-5 order-md-1">
             <!-- COLLAPSE -->
-            <!--PLAN UW AFSPRAAK-->
+
             <div class="accordion" id="accordionExample">
+            <!--PLAN UW AFSPRAAK-->
                 <div class="card mb-3">
                     <div class="card-header" id="headingOne">
                         <h5 class="mb-0">
                             <button class="btn btn-collapse" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            Plan uw afspraak.
+                            1. Plan uw afspraak.
                             </button>
                         </h5>
                     </div>
@@ -48,9 +49,8 @@ permalink: afspraak
                                 <input type="text" class="form-control" id="inputnaam" placeholder="bv. 10/08, 11/08, 15/08, ...">
                                 <!-- persoonlijk zou ik hier eerder voor een datapicker gaan, maar dat zou voor een developper zijn om te coderen.-->
                             </form>
-
                         </div>
-                    </div>
+                    </div>     
                 </div>
 
 <!-- SELECTEER UW OPTIES-->
@@ -58,7 +58,7 @@ permalink: afspraak
                     <div class="card-header" id="headingTwo">
                         <h5 class="mb-0">
                             <button class="btn btn-collapse collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Selecteer uw opties.
+                            2. Selecteer uw opties.
                             </button>
                         </h5>
                     </div>
@@ -97,50 +97,51 @@ permalink: afspraak
                     </div>
                 </div>
 
+
             <!-- CONTACTGEGEVENS-->
                 
                 <div class="card mb-3">
                     <div class="card-header" id="headingThree">
                         <h5 class="mb-0">
                             <button class="btn btn-collapse collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Contactgegevens
+                            3. Contactgegevens
                             </button>
                         </h5>
                     </div>
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                         <div class="card-body">
-                                <form>
-                                    <div class="form-group">
-                                        <label for="inputnaam">Voor- en achternaam</label>
-                                        <input type="text" class="form-control" id="inputnaam" placeholder="bv. Geertje van der Linden">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="inputmail">E-mailadres</label>
-                                        <input type="text" class="form-control" id="inputmail" placeholder="bv. vanderlinden.gh@gmail.com">
-                                    </div>
+                            <form>
+                                <div class="form-group">
+                                    <label for="inputnaam">Voor- en achternaam</label>
+                                    <input type="text" class="form-control" id="inputnaam" placeholder="bv. Geertje van der Linden">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputmail">E-mailadres</label>
+                                    <input type="text" class="form-control" id="inputmail" placeholder="bv. vanderlinden.gh@gmail.com">
+                                </div>
 
-                                    <div class="form-group">
-                                        <label for="inputnummer">GSM-nummer</label>
-                                        <input type="text" class="form-control" id="inputnummer" placeholder="bv. +32484363955">
-                                    </div>
-    
+                                <div class="form-group">
+                                    <label for="inputnummer">GSM-nummer</label>
+                                    <input type="text" class="form-control" id="inputnummer" placeholder="bv. +32484363955">
+                                </div>
 
-                                    <div class="form-group">
-                                        <label for="inputstraat">Straat + huisnummer</label>
-                                        <input type="text" class="form-control" id="inputstraat" placeholder="bv. industrieweg 232">
-                                    </div>
 
-                                    <div class="form-row">
-                                        <div class="form-group col-md-8">
-                                        <label for="inputstad">Stad</label>
-                                        <input type="text" class="form-control" id="inputstad" placeholder="bv. Gent">
-                                        </div>
-                                        <div class="form-group col-md-4">
-                                        <label for="inputpst">Postcode</label>
-                                        <input type="text" class="form-control" id="inputpost" placeholder="bv. 9000">
-                                        </div>
+                                <div class="form-group">
+                                    <label for="inputstraat">Straat + huisnummer</label>
+                                    <input type="text" class="form-control" id="inputstraat" placeholder="bv. industrieweg 232">
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-8">
+                                    <label for="inputstad">Stad</label>
+                                    <input type="text" class="form-control" id="inputstad" placeholder="bv. Gent">
                                     </div>
-                                </form>
+                                    <div class="form-group col-md-4">
+                                    <label for="inputpst">Postcode</label>
+                                    <input type="text" class="form-control" id="inputpost" placeholder="bv. 9000">
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -151,7 +152,7 @@ permalink: afspraak
                     <div class="card-header" id="headingFour">
                         <h5 class="mb-0">
                             <button class="btn btn-collapse collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            Samenvatting
+                            4. Samenvatting
                             </button>
                         </h5>
                     </div>
@@ -177,31 +178,29 @@ permalink: afspraak
                     <div class="card-header" id="headingFive">
                         <h5 class="mb-0">
                             <button class="btn btn-collapse collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            Betalen
+                            5. Betalen
                             </button>
                         </h5>
                     </div>
                     <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionbetalen">
                         <div class="card-body">
-                                <form>
-                                        <div class="custom-control custom-radio">
-                                          <input type="radio" class="custom-control-input" id="customRadio" name="betalen" value="customEx">
-                                          <label class="custom-control-label" for="customRadio">Bankcontact/MisterCash</label>
-                                          <div class="revealifactive">
-                                                <p>U wordt doorverwezen naar de website van uw bank nadat u op verzenden hebt geklikt.</p>
-                                            </div>
-                                        </div>
-                                        <div class="custom-control custom-radio">
-                                          <input type="radio" class="custom-control-input" id="customRadio2" name="betalen" value="customEx">
-                                          <label class="custom-control-label" for="customRadio2">Contant</label>
-                                          <div class="revealifactive">
-                                                <p>Te betalen bij aanvang.</p>
-                                            </div>
-                                        </div> 
-                                            <button type="submit" class="btn btn-normaal"><a href="bevestigingbetaling.html">Verzenden</a></button>
-                                      </form>
-
-                        
+                            <form>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="customRadio" name="betalen" value="customEx">
+                                    <label class="custom-control-label" for="customRadio">Bankcontact/MisterCash</label>
+                                    <div class="revealifactive">
+                                        <p>U wordt doorverwezen naar de website van uw bank nadat u op verzenden hebt geklikt.</p>
+                                    </div>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" class="custom-control-input" id="customRadio2" name="betalen" value="customEx">
+                                    <label class="custom-control-label" for="customRadio2">Contant</label>
+                                    <div class="revealifactive">
+                                        <p>Te betalen bij aanvang.</p>
+                                    </div>
+                                </div> 
+                                <button type="submit" class="btn btn-normaal"><a href="bevestigingbetaling.html">Verzenden</a></button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -209,8 +208,5 @@ permalink: afspraak
             </div>
         
         </div>
-
-
-    
     </div>
 </div>

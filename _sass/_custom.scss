@@ -1,23 +1,9 @@
 //LINKS
 
-
-
 body, html{
     overflow-x: hidden;
 }
 
-.lead {
-    color: $primary;
-}
-
-.bloktekstjumb{
-    background-color: $white;
-    border: 0.20rem solid $primary; 
-}
-
-.titel{
-    color: $white;
-}
 
 //NAV
 
@@ -37,6 +23,7 @@ body, html{
 .navbar-toggler-icon{
      color: $white;
     }
+    
 
 
 
@@ -290,6 +277,16 @@ Werkt ook niet met classes in html : d-flex, justify-content-center en align-ite
     }
 
  }
+
+
+
+@include media-breakpoint-up(md) {
+
+    .navbar-brand{
+        margin-left: 10rem;
+    }
+}
+
 
 
 
